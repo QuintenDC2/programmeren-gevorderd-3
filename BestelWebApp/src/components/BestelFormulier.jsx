@@ -43,7 +43,7 @@ function BestelFormulier() {
    }));
 
   try {
-      await axios.post("https://bestelservice-api-amejd3eagrgqbhcz.westeurope-01.azurewebsites.net/api/bestellingen", {
+      await axios.post("https://bestelservice-api-v2-fbb0fqcbf4dje6aw.westeurope-01.azurewebsites.net/api/bestellingen", {
         producten,
         totaalPrijs: totaal,
         gebruikerId: user?.profile?.sub  // of user.id, afhankelijk van je token-structuur

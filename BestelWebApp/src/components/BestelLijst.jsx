@@ -9,7 +9,7 @@ function BestelLijst() {
   useEffect(() => {
     const laadBestellingen = async () => {
       try {
-        const response = await axios.get(`https://bestelservice-api-amejd3eagrgqbhcz.westeurope-01.azurewebsites.net/api/bestellingen/gebruiker/${user.profile.sub}`, {
+        const response = await axios.get(`https://bestelservice-api-v2-fbb0fqcbf4dje6aw.westeurope-01.azurewebsites.net/api/bestellingen/gebruiker/${user.profile.sub}`, {
           headers: {
             Authorization: `Bearer ${user.access_token}`
           }
