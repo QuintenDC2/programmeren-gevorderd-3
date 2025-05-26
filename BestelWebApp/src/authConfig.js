@@ -3,7 +3,7 @@ export const oidcConfig = {
   client_id: "bestelwebapp-client",
   redirect_uri: "https://happy-sky-04c40e203.6.azurestaticapps.net/callback",
   response_type: "code",
-  scope: "openid profile productbeheerapi offline_access",
+  scope: "openid profile productbeheerapi bestelserviceapi offline_access",
   post_logout_redirect_uri: "https://happy-sky-04c40e203.6.azurestaticapps.net",
   response_mode: "query",
   automaticSilentRenew: true,
