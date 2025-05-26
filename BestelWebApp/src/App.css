@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1f3c88;
+  padding: 1rem 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;              /* VOLLEDIGE BREEKTE */
+  box-sizing: border-box;    /* Padding telt mee binnen de breedte */
+}
+
+.navbar-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.navbar-links a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+/* Layout */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-layout {
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.left-column {
+  max-width: 600px;
+}
+
+.right-column {
+  max-width: 400px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
