@@ -6,7 +6,7 @@ function ProductLijst({ zoekterm }) {
   const [winkelmand, setWinkelmand] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5020/api/Productbeheer")
+    axios.get("https://productbeheer-api-dgapdvfma4fsbggc.westeurope-01.azurewebsites.net/api/Productbeheer")
     .then(res => setProducten(res.data));
 
     const updateMand = () => {
